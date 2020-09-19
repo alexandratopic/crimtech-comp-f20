@@ -1,8 +1,14 @@
+#1. Write a function that returns the square root 
+# of a given variable `n`. If `n` is negative or not 
+#a number, returns `-1`. Put your code in 
+#`square_root.py`
 import math
 
 def square_root(n):
-    # Your code here!
-    return 0
+    if isinstance(n, int) and n >= 0:
+        return math.sqrt(n)
+    else:
+        return -1
 
 def test():
     assert square_root(4) == 2
